@@ -1,17 +1,25 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const themeToggle = document.getElementById("lightmode-toggle");
-//     const isLightMode = document.body.classList.contains("light-mode");
-
-//     // Sync the checkbox with the current theme
-//     themeToggle.checked = isLightMode;
-
-//     themeToggle.addEventListener("change", function() {
-//       document.body.classList.toggle("light-mode");
-//       document.body.classList.toggle("dark-mode");
-//       themeToggle.textContent = document.body.classList.contains("light-mode") ? "Toggle Dark Mode" : "Toggle Light Mode";
-//     });
-//   });
-
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById("lightmode-toggle");
+    const isLightMode = document.body.classList.contains("light-mode");
+  
+    // Sync the checkbox with the current theme
+    themeToggle.checked = isLightMode;
+  
+    themeToggle.addEventListener("change", function() {
+      document.body.classList.toggle("light-mode");
+      document.body.classList.toggle("dark-mode");
+    });
+  
+    // Set the initial theme based on the checkbox state
+    if (themeToggle.checked) {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    } else {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    }
+  });
+  
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
