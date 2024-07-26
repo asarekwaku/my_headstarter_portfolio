@@ -95,7 +95,6 @@ body.light-mode{
 
 .logo{
     font-size: 3rem;
-    font-weight: 700;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -127,26 +126,11 @@ body.light-mode{
 #menu-icon{
     font-size: 3.6rem;
     color: var(--main-color);
-    cursor: pointer;
     display: none;
-}
-
-/* .theme-toggle{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    background-color: var(--main-color);
     cursor: pointer;
-    transition: 0.3s ease;
-    padding: 12.5px 30px;
-    border: 0;
-    border-radius: 100px;
-    ;
 }
 
-.theme-toggle:hover {
-    background-color: var(--text-color);
-    color: var(--bg-color);
-} */
+
 
 
 section{
@@ -537,6 +521,13 @@ article{
     vertical-align: middle; /* Align the icon vertically with the text */
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .contact{
     background-color: var(--bg-color);
 }
@@ -685,18 +676,20 @@ article{
     margin-top: 50px;
     font-size: 16px;
 }
+.article-container img{
+    width:15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
 
 
 @media(max-width:1285px){
     html{
         font-size: 55%;
     }
-    .services-container{
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 5rem;
-    }
-    
 }
     
 @media(max-width:991px){
@@ -735,7 +728,9 @@ article{
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
-    
+    .details-container{
+        flex: 1 1 100%;
+    }
 }
 
 
@@ -755,7 +750,7 @@ article{
         border-left: 2px solid var(--main-color);
         display: none;
       }
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
     .navbar a{
@@ -789,5 +784,6 @@ article{
         max-width: none;
     }
 }
+
 
 
