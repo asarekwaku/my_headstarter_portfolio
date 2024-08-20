@@ -26,9 +26,9 @@ body{
 }
 body.light-mode{
     /* --bg-color: #f5f5f5; */
-    --bg-color: #faf8f5;
-    --second-bg-color: #ffffff;
-    --main-color: #e6b573;
+    --bg-color: #e2ded8;
+    --second-bg-color: #ebebeb;
+    --main-color: #ffcc89;
     --text-color: black;
 }
 
@@ -490,7 +490,14 @@ span{
    
 }
 
-
+.exp-about-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+}
 
 .article-container{
     display: flex;
@@ -731,8 +738,36 @@ article{
     .details-container{
         flex: 1 1 100%;
     }
-}
+    .about-containers.exp-about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
+    .details-container.color-container {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .btn-container .btn {
+        width: auto;
+        margin: 0.5rem 0;
+    }
+}
+/* New addition */
 
 @media(max-width:895px){
     #menu-icon{
@@ -783,7 +818,50 @@ article{
         width: 80%;
         max-width: none;
     }
+
+    .about-containers.exp-about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .details-container.color-container {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .btn-container .btn {
+        width: auto;
+        margin: 0.5rem 0;
+    }
 }
 
 
 
+@media (max-width: 768px) {
+    
+
+    /* .btn-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .btn-container .btn {
+        width: 48%;
+        margin-bottom: 1rem;
+    } */
+}
