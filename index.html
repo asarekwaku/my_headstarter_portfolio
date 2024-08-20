@@ -13,15 +13,22 @@
         <a href="#home" class="logo">Kwaku <span>Asare</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education" >Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects" >Projects</a>
-            <a href="#contact">Contact</a>
+            <div>
+                <a href="#home" class="active">Home</a>
+                <a href="#education" >Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects" >Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+           
         </nav>   
-        
-        <input type="checkbox" id="lightmode-toggle">
-        <label for="lightmode-toggle"></label>
+        <div>
+            <input type="checkbox" id="lightmode-toggle">
+            <label for="lightmode-toggle"></label>
+        </div>
+        <!-- <input type="checkbox" id="lightmode-toggle">
+        <label for="lightmode-toggle"></label> -->
         
         
     </header>
@@ -255,19 +262,19 @@
             <p class="experience-sub-title project-title" style="color: white;">Or in mail here:</p>
         </div>
 
-        <form action="">
+        <form action="https://formsubmit.co/33cf49784b58bfab1a114e88d073eb1b" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text"  placeholder="Your Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Email">
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="number" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="text" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
